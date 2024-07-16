@@ -1,0 +1,58 @@
+<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje para July</title>
+    <style>
+        body {
+            background-color: #FFD1DC; /* Color rosa pastel */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .accept-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .decline-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        .count-btn {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿TE QUIERO MUCHO JULY<3 SABÍAS????</h1>
+    <div>
+        <button class="accept-btn" onclick="alert('muamumuamuamooooaa')">sipp</button>
+        <button class="decline-btn" onclick="alert('ME GUSTASSS ME ENCANTAS GUAPO')">No</button>
+        <button class="count-btn" onclick="countClicks()">¿Cuantos besos me daria?: <span id="clickCount">0</span></button>
+    </div>
+
+    <script>
+        let clickCounter = 0;
+        function countClicks() {
+            clickCounter++;
+            document.getElementById('clickCount').textContent = clickCounter;
+        }
+    </script>
+</body>
+</html>
